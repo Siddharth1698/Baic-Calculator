@@ -177,9 +177,8 @@ public class MainActivity extends AppCompatActivity {
     }
     String num1;
     String oper;
-    String num2;
-    int number1;
-    int number2;
+
+
      String operator;
     private void operation(String s) {
       num1  =  t1.getText().toString();
@@ -195,32 +194,30 @@ public class MainActivity extends AppCompatActivity {
     String res;
 
     private void equaloperation() {
-        t2.setText("hello");
-        /* int result = 0;
-         try {
-             number1 = Integer.valueOf(num1);
-             number2 = Integer.valueOf(t1.getText().toString());
-             switch(oper) {
-                 case "+":
-                     result = number1 + number2;
-                     break;
-                 case "-":
-                     result = number1 - number2;
-                     break;
-                 case "*":
-                     result = number1 * number2;
-                     break;
-                 case "/":
-                     result = number1 / number2;
-                     break;
-
-             }
+        int number1 = Integer.valueOf(num1);
+        int number2 = Integer.valueOf(t1.getText().toString());
+        int result = 0;
+        String res;
+         if(oper == "+"){
+             result = number1 + number2;
              res = String.valueOf(result);
-             t2.setText(result);
-         }  catch (Exception e){
-             e.printStackTrace();
+             t2.setText(res);
          }
-*/
+        else if(oper == "-"){
+            result = number1 - number2;
+            res = String.valueOf(result);
+            t2.setText(res);
+        }
+        if(oper == "*"){
+            result = number1 * number2;
+            res = String.valueOf(result);
+            t2.setText(res);
+        }
+        if(oper == "/"){
+            result = number1 / number2;
+            res = String.valueOf(result);
+            t2.setText(res);
+        }
 
     }
 
