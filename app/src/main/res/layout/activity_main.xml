@@ -10,14 +10,14 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="457dp"
-        android:layout_height="29dp"
+        android:layout_height="50dp"
         android:layout_weight="1"
-        android:text="QUEST" />
+        android:text="QUESTION" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
-        android:layout_height="DP"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="ANSWER" />
 
@@ -159,25 +159,26 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button39"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_weight="1"
-        android:text="SUBMIT" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
+
         <Button
             android:id="@+id/button38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="CLEAR" />
+            android:text="CALCULATE" />
+
+        <Button
+            android:id="@+id/button40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RESET" />
     </LinearLayout>
 
 
