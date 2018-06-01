@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
         b1 = (Button)findViewById(R.id.button11);
         b2 = (Button)findViewById(R.id.button12);
         b3 = (Button)findViewById(R.id.button13);
-        bd = (Button)findViewById(R.id.button32);
+
         b0 = (Button)findViewById(R.id.button33);
-        be = (Button)findViewById(R.id.button34);
+
         div = (Button)findViewById(R.id.button27);
         mul = (Button)findViewById(R.id.button28);
         sub = (Button)findViewById(R.id.button29);
@@ -123,12 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 numberAdd("0");
             }
         });
-        bd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                numberAdd(".");
-            }
-        });
+
 
         div.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -167,7 +162,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        be.setOnClickListener(new View.OnClickListener() {
+
+        calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 equaloperation();

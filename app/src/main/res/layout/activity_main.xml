@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_dark"
+    android:background="@drawable/back"
     android:orientation="vertical">
 
 
@@ -13,7 +13,8 @@
         android:layout_height="50dp"
         android:layout_weight="1"
         android:hint="0"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
     <TextView
         android:id="@+id/textView5"
@@ -102,14 +103,6 @@
                 app:layout_row="2" />
 
             <Button
-                android:id="@+id/button32"
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:text="."
-                app:layout_column="0"
-                app:layout_row="3" />
-
-            <Button
                 android:id="@+id/button33"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -117,13 +110,6 @@
                 app:layout_column="1"
                 app:layout_row="3" />
 
-            <Button
-                android:id="@+id/button34"
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:text="="
-                app:layout_column="2"
-                app:layout_row="3" />
         </android.support.v7.widget.GridLayout>
 
         <LinearLayout
