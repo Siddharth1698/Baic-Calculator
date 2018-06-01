@@ -180,6 +180,7 @@ public class MainActivity extends AppCompatActivity {
       num1  =  t1.getText().toString();
      clearbutton();
       oper = s;
+        t1.setHint("");
 }
 
     private void clearbutton() {
@@ -198,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
              result = number1 + number2;
              res = String.valueOf(result);
              t2.setText(res);
+
          }
         else if(oper == "-"){
             result = number1 - number2;
