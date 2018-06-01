@@ -210,8 +210,10 @@ public class MainActivity extends AppCompatActivity {
             t2.setText(res);
         }
         if(oper == "/"){
-            result = number1 / number2;
-            res = String.valueOf(result);
+             float number3 = number1;
+             float number4 = number2;
+            float result1 = number3 / number4;
+            res = String.valueOf(result1);
             t2.setText(res);
         }
 
